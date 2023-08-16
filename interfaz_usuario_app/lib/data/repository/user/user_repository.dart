@@ -28,7 +28,7 @@ class UserRepository {
       'Content-Type': 'application/json;  charset=UTF-8'
     };
 
-    Uri url = Uri.http("100.26.132.234:5000", "/usersArbelaez");
+    Uri url = Uri.http("10.0.2.2:5000", "/usersArbelaez");
 
     final msg = jsonEncode(userData.toJson());
 
@@ -49,7 +49,7 @@ class UserRepository {
   void login(LoginData loginData) async {
     Map<String, String> headers = {'Content-Type': 'application/json'};
 
-    Uri url = Uri.http("100.26.132.234:5000", "/login");
+    Uri url = Uri.http("10.0.2.2:5000", "/login");
 
     final msg = jsonEncode(loginData.toJson());
 
